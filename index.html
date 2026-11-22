@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UTM Alumni Tracker | Career & Impact Directory</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="brand">
+        <span class="brand-badge">UTM</span>
+        <div>
+          <h1>Alumni Tracker</h1>
+          <p class="subtitle">Universiti Teknologi Malaysia Graduate Impact Network</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#directory" class="nav-link active">Directory</a>
+        <a href="#impact-summary" class="nav-link">Global Impact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero & Impact Overview -->
+  <section id="impact-summary" class="hero">
+    <div class="container">
+      <h2>Discover Where UTM Graduates Lead &amp; Innovate</h2>
+      <p>Search verified alumni across faculties, graduation cohorts, industries, and global hubs to explore career pathways and connect with mentors.</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number" id="statTotal">0</span>
+          <span class="stat-label">Featured Alumni</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="statFaculties">0</span>
+          <span class="stat-label">UTM Faculties</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="statMentors">0</span>
+          <span class="stat-label">Open to Mentoring</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search & Multi-Filter Control Panel -->
+  <main id="directory" class="container main-section">
+    <section class="filter-panel" aria-label="Alumni Search and Filters">
+      <div class="search-row">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by name, role, company, or skill..."
+          aria-label="Search alumni"
+        />
+        <label class="checkbox-label">
+          <input type="checkbox" id="mentorOnly" />
+          Open to Mentor Only
+        </label>
+      </div>
+
+      <div class="filter-grid">
+        <select id="facultyFilter" aria-label="Filter by Faculty">
+          <option value="">All Faculties</option>
+        </select>
+
+        <select id="industryFilter" aria-label="Filter by Industry">
+          <option value="">All Industries</option>
+        </select>
+
+        <select id="locationFilter" aria-label="Filter by Location">
+          <option value="">All Locations</option>
+        </select>
+
+        <select id="yearFilter" aria-label="Filter by Graduation Year">
+          <option value="">All Graduation Years</option>
+        </select>
+
+        <button type="button" id="resetBtn" class="btn-secondary">Reset Filters</button>
+      </div>
+    </section>
+
+    <!-- Dynamic Result Feedback Bar -->
+    <div class="results-bar">
+      <p id="resultsCount">Loading alumni records...</p>
+    </div>
+
+    <!-- Alumni Cards Grid -->
+    <section id="alumniGrid" class="alumni-grid" aria-live="polite"></section>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="empty-state hidden">
+      <h3>No alumni match your current filters</h3>
+      <p>Try broadening your keyword search or clearing one or more filter dropdowns.</p>
+      <button type="button" id="emptyResetBtn" class="btn-primary">Clear All Filters</button>
+    </div>
+  </main>
+
+  <!-- Career & Impact Detail Modal -->
+  <div id="profileModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalName">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button type="button" class="modal-close" id="closeModalBtn" aria-label="Close modal">&times;</button>
+
+      <div class="modal-header">
+        <img id="modalAvatar" src="" alt="Alumnus Avatar" class="avatar-lg" />
+        <div>
+          <span id="modalMentorBadge" class="badge-mentor">Open to Mentoring</span>
+          <h2 id="modalName">Alumnus Name</h2>
+          <p id="modalRole" class="modal-role">Role at Company</p>
+          <p id="modalMeta" class="modal-meta">Faculty &bull; Class of 2020 &bull; Location</p>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <h3>Career &amp; Industry Impact</h3>
+        <p id="modalImpact"></p>
+
+        <h3>Key Achievements &amp; UTM Contributions</h3>
+        <ul id="modalAchievements" class="achievement-list"></ul>
+
+        <!-- Interactive Connection / Mentorship Form -->
+        <div class="connect-box">
+          <h3>Connect with <span id="connectTargetName">Alumnus</span></h3>
+          <form id="connectForm" novalidate>
+            <div class="form-row">
+              <input type="text" id="senderName" placeholder="Your Full Name (e.g., Ali Bin Abu)" required />
+              <input type="email" id="senderEmail" placeholder="Your UTM Email (@graduate.utm.my)" required />
+            </div>
+            <textarea id="senderMessage" rows="3" placeholder="Briefly state your purpose (e.g., career advice, final-year project insight, guest talk)..." required></textarea>
+            <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+            <button type="submit" class="btn-primary">Send Connection Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>SECV2223 Web Programming &mdash; Case Study 1: UTM Alumni Tracker Prototype (Sample Data Only)</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
