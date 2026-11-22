@@ -50,6 +50,15 @@ body {
   gap: 0.75rem;
 }
 
+.brand-logo {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
 .brand-badge {
   background: var(--utm-gold);
   color: var(--utm-maroon-dark);
@@ -83,11 +92,16 @@ body {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, var(--utm-maroon-dark), var(--utm-maroon));
+  background:
+    linear-gradient(
+      135deg,
+      rgba(66, 0, 22, 0.90),
+      rgba(92, 0, 31, 0.82)
+    ),
+    url("../assets/hero-banner.jpg") center / cover no-repeat;
   color: #fff;
-  padding: 2.5rem 0;
+  padding: 3rem 0;
 }
-
 .hero h2 {
   font-size: clamp(1.5rem, 3vw, 2.1rem);
   margin-bottom: 0.5rem;
