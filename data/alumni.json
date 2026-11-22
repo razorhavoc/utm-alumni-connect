@@ -1,0 +1,154 @@
+[
+  {
+    "id": "ALM-001",
+    "name": "Aisyah Binti Rahman",
+    "faculty": "Faculty of Computing",
+    "programme": "Bachelor of Computer Science (Network & Security)",
+    "gradYear": 2019,
+    "role": "Senior Cloud Security Engineer",
+    "company": "Grab",
+    "industry": "Technology",
+    "location": "Kuala Lumpur, Malaysia",
+    "impactSummary": "Architected zero-trust cloud infrastructure protecting regional digital payment pipelines across Southeast Asia.",
+    "achievements": [
+      "Led PCI-DSS security automation initiative (2024)",
+      "Keynote Speaker at CyberDSA Kuala Lumpur (2025)",
+      "UTM Dean's List & Best Final Year Project Award (2019)"
+    ],
+    "openToMentor": true,
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=AR&backgroundColor=5c001f"
+  },
+  {
+    "id": "ALM-002",
+    "name": "Daniel Lim Wei Jie",
+    "faculty": "Faculty of Electrical Engineering",
+    "programme": "Bachelor of Electrical Engineering (Mechatronics)",
+    "gradYear": 2018,
+    "role": "Lead Robotics Systems Engineer",
+    "company": "Dyson",
+    "industry": "Manufacturing & Robotics",
+    "location": "Johor Bahru, Malaysia",
+    "impactSummary": "Spearheaded autonomous navigation firmware for next-generation smart home robotics manufactured in Johor.",
+    "achievements": [
+      "Co-inventor on 2 sensor-fusion hardware patents",
+      "UTM Robocon Team Captain (2017–2018)",
+      "Industry Advisory Panel Member for FKE UTM"
+    ],
+    "openToMentor": true,
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=DL&backgroundColor=1d4ed8"
+  },
+  {
+    "id": "ALM-003",
+    "name": "Nurul Izzah Zulkifli",
+    "faculty": "Faculty of Civil Engineering",
+    "programme": "Bachelor of Civil Engineering",
+    "gradYear": 2016,
+    "role": "Principal Sustainable Infrastructure Consultant",
+    "company": "Arup",
+    "industry": "Construction & Engineering",
+    "location": "Singapore",
+    "impactSummary": "Directed green-building structural assessments and flood-resilient urban drainage masterplans in Singapore.",
+    "achievements": [
+      "BCA Green Mark Advanced Accredited Professional",
+      "Delivered flood-mitigation design for Marina South district",
+      "Guest Lecturer for UTM Sustainable Urbanism Seminar"
+    ],
+    "openToMentor": false,
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=NI&backgroundColor=047857"
+  },
+  {
+    "id": "ALM-004",
+    "name": "Ahmad Syafiq Bin Osman",
+    "faculty": "Faculty of Computing",
+    "programme": "Bachelor of Computer Science (Software Engineering)",
+    "gradYear": 2021,
+    "role": "Staff Full-Stack Engineer",
+    "company": "Wise",
+    "industry": "FinTech",
+    "location": "London, United Kingdom",
+    "impactSummary": "Built low-latency cross-border settlement APIs processing multi-currency transfers for over 10 million users.",
+    "achievements": [
+      "Reduced international transfer latency by 38%",
+      "Founded UTM Open Source Student Community (2019)",
+      "Mentored 15+ Malaysian tech graduates relocating to UK"
+    ],
+    "openToMentor": true,
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=AS&backgroundColor=b45309"
+  },
+  {
+    "id": "ALM-005",
+    "name": "Priya Nair",
+    "faculty": "Faculty of Chemical and Energy Engineering",
+    "programme": "Bachelor of Chemical Engineering",
+    "gradYear": 2017,
+    "role": "Renewable Energy Transition Lead",
+    "company": "PETRONAS",
+    "industry": "Energy & Sustainability",
+    "location": "Kuala Lumpur, Malaysia",
+    "impactSummary": "Managed green hydrogen pilot plant feasibility studies and carbon capture integration across Peninsular Malaysia.",
+    "achievements": [
+      "Recipient of ASEAN Young Energy Professional Award (2024)",
+      "Published 4 peer-reviewed papers on hydrogen catalysis",
+      "UTM Chancellor's Award Recipient (2017)"
+    ],
+    "openToMentor": true,
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=PN&backgroundColor=0f766e"
+  },
+  {
+    "id": "ALM-006",
+    "name": "Muhammad Hafizudin",
+    "faculty": "Faculty of Mechanical Engineering",
+    "programme": "Bachelor of Mechanical Engineering (Automotive)",
+    "gradYear": 2020,
+    "role": "EV Powertrain Thermal Engineer",
+    "company": "PROTON",
+    "industry": "Automotive",
+    "location": "Shah Alam, Malaysia",
+    "impactSummary": "Designed battery thermal management cooling loops tailored for tropical high-humidity EV operations.",
+    "achievements": [
+      "Core R&D engineer for Malaysia's national EV platform",
+      "Former President of UTM Formula Student Racing Team",
+      "Sponsored UTM Automotive Lab equipment grant (2025)"
+    ],
+    "openToMentor": false,
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=MH&backgroundColor=4338ca"
+  },
+  {
+    "id": "ALM-007",
+    "name": "Chong Mei Ling",
+    "faculty": "Faculty of Management",
+    "programme": "Bachelor of Management (Technology)",
+    "gradYear": 2022,
+    "role": "Product Manager — AI Logistics",
+    "company": "Shopee",
+    "industry": "E-Commerce & Tech",
+    "location": "Singapore",
+    "impactSummary": "Launched machine-learning route optimization tools cutting last-mile parcel delivery times across ASEAN.",
+    "achievements": [
+      "Scaled automated warehouse sorting workflow in 4 countries",
+      "Winner of UTM Innovation & Entrepreneurship Challenge (2021)",
+      "Regular judge for UTM Startup Weekend"
+    ],
+    "openToMentor": true,
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=CM&backgroundColor=be123c"
+  },
+  {
+    "id": "ALM-008",
+    "name": "Dr. Khairul Anuar Bin Rosli",
+    "faculty": "Faculty of Science",
+    "programme": "Bachelor of Science (Industrial Mathematics)",
+    "gradYear": 2015,
+    "role": "Principal Data Scientist",
+    "company": "Bank Negara Malaysia",
+    "industry": "Banking & Finance",
+    "location": "Kuala Lumpur, Malaysia",
+    "impactSummary": "Developed macroeconomic stress-testing models and real-time fraud anomaly detection systems.",
+    "achievements": [
+      "PhD in Applied Predictive Analytics (2020)",
+      "Advisor for UTM Data Science Curriculum Review",
+      "Published national financial stability analytics framework"
+    ],
+    "openToMentor": true,
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=KA&backgroundColor=5c001f"
+  }
+]
