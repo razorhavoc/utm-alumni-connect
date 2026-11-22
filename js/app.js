@@ -1,9 +1,14 @@
 let alumniData = [];
+let currentFilteredList = [];
+const ITEMS_PER_PAGE = 6;
+let visibleCount = ITEMS_PER_PAGE;
 
 // DOM Elements
 const alumniGrid = document.getElementById("alumniGrid");
 const emptyState = document.getElementById("emptyState");
 const resultsCount = document.getElementById("resultsCount");
+const viewMoreContainer = document.getElementById("viewMoreContainer");
+const viewMoreBtn = document.getElementById("viewMoreBtn");
 
 const searchInput = document.getElementById("searchInput");
 const facultyFilter = document.getElementById("facultyFilter");
@@ -30,7 +35,10 @@ async function initAlumniTracker() {
 
     populateStats(alumniData);
     populateFilterDropdowns(alumniData);
-    renderAlumniCards(alumniData);
+
+    currentFilteredList = [...alumniData];
+    visibleCount = ITEMS_PER_PAGE;
+    renderAlumniCards();
   } catch (error) {
     resultsCount.textContent =
       "Unable to load alumni.json. Please open this project using a local server (e.g., VS Code Live Server).";
@@ -67,19 +75,24 @@ function populateFilterDropdowns(data) {
   );
 }
 
-// 4. Render Alumni Cards
-function renderAlumniCards(list) {
+// 4. Render Alumni Cards (Paginated by visibleCount)
+function renderAlumniCards() {
   alumniGrid.innerHTML = "";
-  resultsCount.textContent = `Showing ${list.length} of ${alumniData.length} UTM alumni`;
+  const totalMatches = currentFilteredList.length;
 
-  if (list.length === 0) {
+  if (totalMatches === 0) {
+    resultsCount.textContent = `Showing 0 of ${alumniData.length} UTM alumni`;
     emptyState.classList.remove("hidden");
+    viewMoreContainer.classList.add("hidden");
     return;
   }
 
   emptyState.classList.add("hidden");
 
-  list.forEach((alumnus) => {
+  const visibleItems = currentFilteredList.slice(0, visibleCount);
+  resultsCount.textContent = `Showing ${visibleItems.length} of ${totalMatches} matching UTM alumni`;
+
+  visibleItems.forEach((alumnus) => {
     const card = document.createElement("article");
     card.className = "alumni-card";
 
@@ -115,6 +128,16 @@ function renderAlumniCards(list) {
     alumniGrid.appendChild(card);
   });
 
+  // Toggle & update "View More" button
+  const remaining = totalMatches - visibleItems.length;
+  if (remaining > 0) {
+    const nextBatch = Math.min(ITEMS_PER_PAGE, remaining);
+    viewMoreBtn.textContent = `View More (${nextBatch} of ${remaining} remaining)`;
+    viewMoreContainer.classList.remove("hidden");
+  } else {
+    viewMoreContainer.classList.add("hidden");
+  }
+
   // Attach Modal Triggers
   document.querySelectorAll(".view-profile-btn").forEach((btn) => {
     btn.addEventListener("click", () => openProfileModal(btn.dataset.id));
@@ -130,7 +153,7 @@ function applyFilters() {
   const year = yearFilter.value;
   const onlyMentors = mentorOnly.checked;
 
-  const filtered = alumniData.filter((a) => {
+  currentFilteredList = alumniData.filter((a) => {
     const matchesQuery =
       !query ||
       a.name.toLowerCase().includes(query) ||
@@ -154,7 +177,9 @@ function applyFilters() {
     );
   });
 
-  renderAlumniCards(filtered);
+  // Reset pagination back to 6 whenever filters change
+  visibleCount = ITEMS_PER_PAGE;
+  renderAlumniCards();
 }
 
 function resetAllFilters() {
@@ -164,8 +189,17 @@ function resetAllFilters() {
   locationFilter.value = "";
   yearFilter.value = "";
   mentorOnly.checked = false;
-  renderAlumniCards(alumniData);
+
+  currentFilteredList = [...alumniData];
+  visibleCount = ITEMS_PER_PAGE;
+  renderAlumniCards();
 }
+
+// Expand 6 more cards on click
+viewMoreBtn.addEventListener("click", () => {
+  visibleCount += ITEMS_PER_PAGE;
+  renderAlumniCards();
+});
 
 // 6. Interaction 2: Open Detail Modal
 function openProfileModal(id) {
@@ -190,7 +224,6 @@ function openProfileModal(id) {
     listEl.appendChild(li);
   });
 
-  // Reset form state
   connectForm.reset();
   formFeedback.textContent = "";
   formFeedback.className = "form-feedback";
