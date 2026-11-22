@@ -291,6 +291,23 @@ select {
   margin-bottom: 1rem;
 }
 
+.view-more-container {
+  text-align: center;
+  margin-top: 1.75rem;
+}
+
+.view-more-container .btn-secondary {
+  padding: 0.7rem 1.75rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--utm-maroon);
+}
+
+.view-more-container .btn-secondary:hover {
+  background: var(--utm-maroon);
+  color: #fff;
+}
+
 /* Empty State */
 .empty-state {
   text-align: center;
