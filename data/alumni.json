@@ -151,4 +151,137 @@
     "openToMentor": true,
     "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=KA&backgroundColor=5c001f"
   }
+    {
+    "id": "ALM-009",
+    "name": "Farah Nabila Binti Kamal",
+    "faculty": "Faculty of Built Environment and Surveying",
+    "programme": "Bachelor of Architecture",
+    "gradYear": 2018,
+    "role": "Senior Sustainable Urban Architect",
+    "company": "GDP Architects",
+    "industry": "Architecture & Urban Design",
+    "location": "Kuala Lumpur, Malaysia",
+    "impactSummary": "Designed net-zero transit-oriented mixed developments and tropical passive-cooling civic spaces in Greater KL.",
+    "achievements": [
+      "PAM Gold Award Winner for Sustainable Commercial Design (2024)",
+      "Lead Architect for River of Life Pedestrian Linkage Phase 3",
+      "External Studio Critic for UTM Architecture Final Year Reviews"
+    ],
+    "openToMentor": true,
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=FN&backgroundColor=7c2d12"
+  },
+  {
+    "id": "ALM-010",
+    "name": "Kenji Takahashi",
+    "faculty": "Malaysia-Japan International Institute of Technology (MJIIT)",
+    "programme": "Bachelor of Electronic Systems Engineering",
+    "gradYear": 2020,
+    "role": "Embedded AI & Edge Computing Engineer",
+    "company": "Sony EMCS",
+    "industry": "Semiconductors & Electronics",
+    "location": "Penang, Malaysia",
+    "impactSummary": "Developed ultra-low-power computer vision inference pipelines for industrial smart-factory inspection cameras.",
+    "achievements": [
+      "Reduced defect detection false positives by 42% on assembly lines",
+      "Monbukagakusho (MEXT) Research Exchange Fellow (2019)",
+      "Co-organizer of Penang-UTM Embedded Systems Hackathon"
+    ],
+    "openToMentor": true,
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=KT&backgroundColor=1e3a8a"
+  },
+  {
+    "id": "ALM-011",
+    "name": "Siti Aminah Binti Yusof",
+    "faculty": "Faculty of Social Sciences and Humanities",
+    "programme": "Bachelor of Science with Education (TESL)",
+    "gradYear": 2016,
+    "role": "EdTech Curriculum & AI Literacy Lead",
+    "company": "UNICEF Malaysia",
+    "industry": "Education & Non-Profit",
+    "location": "Putrajaya, Malaysia",
+    "impactSummary": "Spearheaded nationwide digital literacy and generative AI readiness modules for rural secondary school educators.",
+    "achievements": [
+      "Trained over 4,500 Malaysian teachers across Sabah and Sarawak",
+      "Author of Open-Access ASEAN Digital Pedagogy Toolkit",
+      "UTM Alumni Community Impact Award Recipient (2025)"
+    ],
+    "openToMentor": true,
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=SA&backgroundColor=831843"
+  },
+  {
+    "id": "ALM-012",
+    "name": "Arvindran Subramaniam",
+    "faculty": "Faculty of Computing",
+    "programme": "Bachelor of Computer Science (Data Engineering)",
+    "gradYear": 2023,
+    "role": "Machine Learning Platform Engineer",
+    "company": "AirAsia MOVE",
+    "industry": "Aviation & Travel Tech",
+    "location": "Sepang, Malaysia",
+    "impactSummary": "Engineered real-time dynamic flight pricing pipelines and personalized itinerary recommendation engines.",
+    "achievements": [
+      "Scaled Kubernetes ML inference clusters handling 50k requests/min",
+      "1st Runner-Up at Malaysia Data Innovation Talent x DOSM (2022)",
+      "Active mentor for UTM Google Developer Student Clubs"
+    ],
+    "openToMentor": true,
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=AS2&backgroundColor=b91c1c"
+  },
+  {
+    "id": "ALM-013",
+    "name": "Zulhilmi Bin Razak",
+    "faculty": "Faculty of Electrical Engineering",
+    "programme": "Bachelor of Electrical Engineering (Power)",
+    "gradYear": 2014,
+    "role": "Grid Modernization & Solar Integration Manager",
+    "company": "Tenaga Nasional Berhad (TNB)",
+    "industry": "Energy & Utilities",
+    "location": "Kuala Lumpur, Malaysia",
+    "impactSummary": "Led utility-scale battery energy storage system (BESS) integration to stabilize Peninsular Malaysia's renewable grid.",
+    "achievements": [
+      "Commissioned 100MW utility-scale solar grid interconnection",
+      "Registered Professional Engineer (Ir.) with Board of Engineers Malaysia",
+      "Sponsored annual UTM High-Voltage Lab industrial visits"
+    ],
+    "openToMentor": false,
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=ZR&backgroundColor=065f46"
+  },
+  {
+    "id": "ALM-014",
+    "name": "Wong Kah Wai",
+    "faculty": "Azman Hashim International Business School (AHIBS)",
+    "programme": "Master of Business Administration (Technopreneurship)",
+    "gradYear": 2019,
+    "role": "Co-Founder & Chief Operating Officer",
+    "company": "AgroPulse Technologies",
+    "industry": "AgriTech & IoT",
+    "location": "Johor Bahru, Malaysia",
+    "impactSummary": "Scaled precision IoT soil-sensor and drone fertigation platforms across 12,000 hectares of Johor farms.",
+    "achievements": [
+      "Raised RM 8.5M Series A funding led by regional venture funds",
+      "Incubated early prototype at UTM Innovation and Commercialisation Centre",
+      "Forbes 30 Under 30 Asia Honoree (2023)"
+    ],
+    "openToMentor": true,
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=WK&backgroundColor=92400e"
+  },
+  {
+    "id": "ALM-015",
+    "name": "Nadia Sofea Binti Mazlan",
+    "faculty": "Faculty of Science",
+    "programme": "Bachelor of Science (Biotechnology)",
+    "gradYear": 2021,
+    "role": "Clinical Bioinformatics Specialist",
+    "company": "Roche",
+    "industry": "Healthcare & Biotech",
+    "location": "Basel, Switzerland",
+    "impactSummary": "Analyzed genomic sequencing biomarkers to accelerate targeted oncology clinical trials across European research centers.",
+    "achievements": [
+      "Co-authored 3 oncology genomics studies in Nature Medicine",
+      "Recipient of UTM Royal Education Award (2021)",
+      "Hosts quarterly virtual career webinars for UTM Bioscience students"
+    ],
+    "openToMentor": true,
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=NS&backgroundColor=3730a3"
+  }
 ]
