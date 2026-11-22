@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UTM Alumni Tracker | Career & Impact Directory</title>
+  <!-- Favicon Slot -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -11,6 +13,14 @@
   <header class="navbar">
     <div class="container nav-content">
       <div class="brand">
+        <!-- Logo Slot (falls back to text badge if utm-logo.png is not added yet) -->
+        <img
+          src="assets/utm-logo.png"
+          alt="UTM Logo"
+          class="brand-logo"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';"
+        />
+        <span class="brand-badge" style="display: none;">UTM</span>
         <span class="brand-badge">UTM</span>
         <div>
           <h1>Alumni Tracker</h1>
