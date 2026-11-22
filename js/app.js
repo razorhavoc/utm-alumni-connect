@@ -3,6 +3,10 @@ let currentFilteredList = [];
 const ITEMS_PER_PAGE = 6;
 let visibleCount = ITEMS_PER_PAGE;
 
+function getFallbackAvatar(name) {
+  return `https://api.dicebear.com/9.x/initials/svg?seed=${encodeURIComponent(name)}&backgroundColor=5c001f`;
+}
+
 // DOM Elements
 const alumniGrid = document.getElementById("alumniGrid");
 const emptyState = document.getElementById("emptyState");
@@ -99,7 +103,9 @@ function renderAlumniCards() {
     card.innerHTML = `
       <div>
         <div class="card-top">
-          <img src="${alumnus.avatar}" alt="${alumnus.name}" class="avatar" />
+          <img src="${alumnus.avatar}" alt="${alumnus.name}" class="avatar"
+            onerror="this.onerror=null; this.src='${getFallbackAvatar(alumnus.name)}';"
+          />
           <div>
             <h3 class="card-title">${alumnus.name}</h3>
             <p class="card-role">${alumnus.role} @ ${alumnus.company}</p>
@@ -212,6 +218,13 @@ function openProfileModal(id) {
   document.getElementById("modalMeta").textContent = `${alumnus.faculty} (${alumnus.programme}) • Class of ${alumnus.gradYear} • ${alumnus.location}`;
   document.getElementById("modalImpact").textContent = alumnus.impactSummary;
   document.getElementById("connectTargetName").textContent = alumnus.name;
+
+  const modalAvatar = document.getElementById("modalAvatar");
+  modalAvatar.src = alumnus.avatar;
+  modalAvatar.onerror = () => {
+    modalAvatar.onerror = null;
+    modalAvatar.src = getFallbackAvatar(alumnus.name);
+  };
 
   const mentorBadge = document.getElementById("modalMentorBadge");
   mentorBadge.classList.toggle("hidden", !alumnus.openToMentor);
